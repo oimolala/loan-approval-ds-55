@@ -46,7 +46,7 @@ def run_ml_app():
     #Structured Form
     left, right = st.columns((2,2))
     gender = left.selectbox("Gender", ("Male", "Female"))
-    married = right.selectbx("Married",  ("Yes", "No"))
+    married = right.selectbox("Married",  ("Yes", "No"))
     dependent = left.selectbox("Dependent", (0, 1, 2, 3))
     education = right.selectbox("Education", ("Graduate", "Not Graduate"))
     self_employed = left.selectbox("Self-Employed", ("Yes", "No"))
@@ -87,4 +87,5 @@ def predict(gender, married, dependent, education, self_employed, applicant_inco
 
 
 if __name__ == "__main__":
+
     main()
