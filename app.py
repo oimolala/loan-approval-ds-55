@@ -38,7 +38,7 @@ def main():
 
 def run_ml_app():
     design = """<div style="padding:15px;">
-                    <h1 style="color:#000">Loan Eligibility Prediction</h1>
+                    <h1 style="color:#fff">Loan Eligibility Prediction</h1>
                 </div>
              """
     st.markdown(design, unsafe_allow_html=True)
@@ -89,5 +89,6 @@ def predict(gender, married, dependent, education, self_employed, applicant_inco
 if __name__ == "__main__":
 
     main()
+
 
 
