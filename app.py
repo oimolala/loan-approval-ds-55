@@ -5,7 +5,7 @@ import pickle
 with open('Logistic_Regression_Model.pkl', 'rb') as file:
     Logistic_Regression_Model = pickle.load(file)
 
-html_temp = """<div style="background-color:#fff;padding:10px;border-radius:10px">
+html_temp = """<div style="background-color:#000;padding:10px;border-radius:10px">
                 <h1 style="color:#fff;text-align:center">Loan Eligibility Prediction App</h1> 
                 <h4 style="color:#fff;text-align:center">Made for: Credit Team</h4> 
                 """
@@ -89,4 +89,5 @@ def predict(gender, married, dependent, education, self_employed, applicant_inco
 if __name__ == "__main__":
 
     main()
+
 
